@@ -42,12 +42,7 @@ class TodosContainer extends Component {
   }
 }
 
-export default connect(
-  ({ todo }) => ({
-    input: todo.get("input"),
-    todos: todo.get("todos")
-  }),
-  dispatch => ({
-    TodoActions: bindActionCreators(todoActions, dispatch)
-  })
-)(TodosContainer);
+export default connect(({ todo }) => ({
+  input: todo.get("input"),
+  todos: todo.get("todos")
+}))(TodosContainer);
