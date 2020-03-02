@@ -1,10 +1,6 @@
 import React from 'react';
 
-const Counter = ({
-  number,
-  onIncrement,
-  onDecrement
-}) => {
+const Counter = ({ number, onIncrement, onDecrement }) => {
   return (
     <div>
       <h1>{number}</h1>
